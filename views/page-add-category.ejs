@@ -1,0 +1,83 @@
+<%- include('patials/head') %>
+
+  <%- include('patials/side_navbar') %>
+    <%- include('patials/top_navbar') %>
+
+      <body class="  ">
+        <!-- loader Start -->
+        <div id="loading">
+          <div id="loading-center">
+          </div>
+        </div>
+
+        <!-- Wrapper Start -->
+        <div class="wrapper">
+          <%- include('patials/message') %>
+            <div class="content-page">
+              <div class="container-fluid add-form-list">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="card">
+                      <div class="card-header d-flex justify-content-between">
+                        <div class="header-title">
+                          <h4 class="card-title">Add Category/h4>
+                        </div>
+                        <a href="/users/page-list-category"> <button type="submit" class="btn btn-primary mr-2">list
+                            Category</button></a>
+                      </div>
+                      <div class="card-body">
+
+                        <!-- input form to add category-->
+                        <form action="/users/page-add-category" method="POST" enctype="multipart/form-data"
+                          data-toggle="validator">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <label>Image</label>
+                                <input type="file" class="form-control image-file" name="image" accept="image/*">
+                              </div>
+                            </div>
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <label>Product Name *</label>
+                                <input type="text" class="form-control" name="productName"
+                                  placeholder="Enter ProductName">
+                                <div class="help-block with-errors"></div>
+                              </div>
+                            </div>
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <label>Category *</label>
+                                <select name="category" class="selectpicker form-control" data-style="py-0">
+                                  <option>Beauty</option>
+                                  <option>Grocery</option>
+                                  <option>Food</option>
+                                  <option>Furniture</option>
+                                  <option>Shoes</option>
+                                  <option>Phone</option>
+                                  <option>Electronics</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <label>Code *</label>
+                                <input type="text" class="form-control" placeholder="Enter Code" name="code" required>
+                                <div class="help-block with-errors"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <button type="submit" class="btn btn-primary mr-2">Add category</button>
+                          <button type="reset" class="btn btn-danger">Reset</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Page end  -->
+              </div>
+            </div>
+        </div>
+        <!-- Wrapper End-->
+        <%- include('patials/footer') %>
+          <%- include('patials/closingtags') %>

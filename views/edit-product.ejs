@@ -1,0 +1,86 @@
+<%- include('patials/head') %>
+
+  <%- include('patials/side_navbar') %>
+    <%- include('patials/top_navbar') %>
+
+      <div class="wrapper">
+        <div class="content-page">
+          <div class="container-fluid add-form-list">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="card">
+                  <div class="card-header d-flex justify-content-between">
+                    <div class="header-title">
+                      <h4 class="card-title">Edit Product</h4>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <form action="/users/edit-product/<%= product._id %>" method="POST" enctype="multipart/form-data">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label>Name *</label>
+                            <input type="text" class="form-control" name="name" value="<%= product.name %>" required>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label>Code *</label>
+                            <input type="text" class="form-control" name="code" value="<%= product.code %>" required>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label>Category *</label>
+                            <input type="text" class="form-control" name="category" value="<%= product.category %>"
+                              required>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label>Cost *</label>
+                            <input type="text" class="form-control" name="cost" value="<%= product.cost %>" required>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label>Price *</label>
+                            <input type="text" class="form-control" name="price" value="<%= product.price %>" required>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label>Quantity *</label>
+                            <input type="text" class="form-control" name="quantity" value="<%= product.quantity %>"
+                              required>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label>Image</label>
+                            <input type="file" class="form-control image-file" name="image" accept="image/*">
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label>Description / Product Details</label>
+                            <textarea class="form-control" rows="4"
+                              name="description"><%= product.description %></textarea>
+                          </div>
+                        </div>
+                      </div>
+
+                      <button type="submit" class="btn btn-primary mr-2">Update Product</button>
+                      <a href="/users/page-list-product" class="btn btn-danger">Cancel</a>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Page end  -->
+          </div>
+        </div>
+      </div>
+
+      <%- include('patials/footer') %>
+        <%- include('patials/closingtags') %>

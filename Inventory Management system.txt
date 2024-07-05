@@ -1,0 +1,31 @@
+module:
+- Admin
+- store manager
+- cashier
+- HR manager
+
+-* Admin is the business owner bussiness owner.
+	- can perform All actions.
+	
+-* Store manager 
+	- View products
+	- add products
+	- delete
+	- update
+	- add category
+	- add product image
+	- add supplier
+	- remove supplier
+	- do Transactions to suppliers and customers
+
+-* Cashiers
+	- Sell product
+	- View product
+	- Generate receipt (generating receipt is dynamically generated once a 
+	  once a product is purchased)
+
+-* HR
+
+	- add staff
+		- department,
+	- delete staff

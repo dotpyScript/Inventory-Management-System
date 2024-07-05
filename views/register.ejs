@@ -1,0 +1,104 @@
+<%- include('patials/head') %>
+
+  <!-- loader Start -->
+  <div id="loading">
+    <div id="loading-center"></div>
+  </div>
+  <!-- loader END -->
+
+  <div class="wrapper">
+    <div class="message">
+    </div>
+    <section class="login-content">
+      <div class="container">
+        <div class="row align-items-center justify-content-center height-self-center">
+          <div class="col-lg-8">
+            <div class="card auth-card">
+              <div class="card-body p-0">
+                <div class="d-flex align-items-center auth-content">
+                  <div class="col-lg-7 align-self-center">
+                    <div class="p-4">
+                      <h2 class="mb-2">Sign Up</h2>
+
+                      <!-- including alert -->
+                      <%- include('patials/message') %>
+
+                        <!-- registration form -->
+                        <form action="/register" method="POST" id="basic">
+                          <div class="row">
+                            <div class="col-lg-6">
+                              <div class="floating-label form-group">
+                                <input class="floating-input form-control" name="firstName" type="text" placeholder=" "
+                                  style="height: 55px;">
+                                <label>First Name</label>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="floating-label form-group">
+                                <input class="floating-input form-control" name="lastName" type="text" placeholder=" "
+                                  style="height: 55px;">
+                                <label>Last Name</label>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="floating-label form-group">
+                                <input class="floating-input form-control" name="email" type="email" placeholder=" "
+                                  style="height: 55px;">
+                                <label>Email</label>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="floating-label form-group">
+                                <input class="floating-input form-control" name="phone" type="text" placeholder=" "
+                                  style="height: 55px;">
+                                <label>Phone No.</label>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="floating-label form-group">
+                                <input class="floating-input form-control" name="password" type="password"
+                                  placeholder=" " style="height: 55px;">
+                                <label>Password</label>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="floating-label form-group">
+                                <input class="floating-input form-control" name="confirmPassword" type="password"
+                                  placeholder=" " style="height: 55px;">
+                                <label>Confirm Password</label>
+                              </div>
+                            </div>
+                            <div class="col-lg-12">
+                              <div class="custom-control custom-checkbox mb-3">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1"
+                                  style="height: 55px;">
+                                <label class="custom-control-label" for="customCheck1">
+                                  I agree with the terms of use
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                          <button type="submit" class="btn btn-primary">
+                            Sign Up
+                          </button>
+                          <p class="mt-3">
+                            Already have an Account
+                            <a href="/users/login" class="text-primary">Sign In</a>
+                          </p>
+                        </form>
+                    </div>
+                  </div>
+                  <div class="col-lg-5 content-right">
+                    <img src="/images/login/01.png" class="img-fluid image-right" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Wrapper End-->
+  <%- include('patials/closingtags') %>
