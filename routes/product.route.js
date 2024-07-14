@@ -189,9 +189,7 @@ router.post('/page-add-category', async (req, res) => {
         return res.redirect('/users/page-add-category');
       } else {
         const newCategory = new Category({
-          productName: req.body.productName,
-          category: req.body.category,
-          code: req.body.code,
+          name: req.body.name,
           imagePath: '/uploads/' + req.file.filename,
         });
 

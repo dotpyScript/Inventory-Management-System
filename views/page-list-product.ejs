@@ -1,7 +1,6 @@
 <%- include('patials/head') %>
-
-  <%- include('patials/side_navbar') %>
-    <%- include('patials/top_navbar') %>
+  <%- include('patials/top_navbar') %>
+    <%- include('patials/side_navbar') %>
 
       <!-- loader Start -->
       <div id="loading">
@@ -10,9 +9,9 @@
       </div>
       <!-- loader END -->
       <!-- Wrapper Start -->
-      <div class="wrapper">
+      <%- include('patials/message') %>
 
-        <%- include('patials/message') %>
+        <div class="wrapper">
           <div class="content-page">
             <div class="container-fluid">
               <div class="row">
@@ -152,7 +151,7 @@
               </div>
             </div>
           </div>
-      </div>
-      <!-- Wrapper End-->
-      <%- include('patials/footer') %>
-        <%- include('patials/closingtags') %>
+        </div>
+        <!-- Wrapper End-->
+        <%- include('patials/footer') %>
+          <%- include('patials/closingtags') %>

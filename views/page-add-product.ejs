@@ -1,7 +1,7 @@
 <%- include('patials/head') %>
 
-  <%- include('patials/side_navbar') %>
-    <%- include('patials/top_navbar') %>
+  <%- include('patials/top_navbar') %>
+    <%- include('patials/side_navbar') %>
 
 
       <!-- loader Start -->
@@ -22,7 +22,7 @@
                       <div class="header-title">
                         <h4 class="card-title">Add Product</h4>
                       </div>
-                      <a href="/users/page-list-product"> <button type="submit" class="btn btn-primary mr-2">list
+                      <a href="/users/page-list-product"> <button type="submit" class="btn btn-primary mr-2">List
                           Product</button></a>
                     </div>
                     <div class="card-body">
@@ -47,11 +47,9 @@
                               <label>Category *</label>
                               <select name="category" class="selectpicker form-control" data-style="py-0" required>
                                 <option value="Beauty">Beauty</option>
-                                <option value="Grocery">Grocery</option>
-                                <option value="Food">Food</option>
+                                <option value="Clothimg">Clothing</option>
                                 <option value="Shoes">Shoes</option>
-                                <option value="Frames">Phones</option>
-                                <option value="Jewellery">Electronics</option>
+                                <option value="Accessory">Accessory</option>
                               </select>
                             </div>
                           </div>
@@ -91,7 +89,6 @@
                           </div>
                         </div>
                         <button type="submit" class="btn btn-primary mr-2">Add Product</button>
-
                         <button type="reset" class="btn btn-danger">Reset</button>
                       </form>
                     </div>

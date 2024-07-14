@@ -1,41 +1,43 @@
-<% if (typeof errors !=='undefined' ) { %>
-  <% errors.forEach( err=> { %>
+<style>
+  .container-content {
+    max-width: 350px;
+    text-wrap: nowrap;
+    margin: 0;
+    padding: 10px 15px;
+  }
 
-    <div class="alert text-white bg-warning" role="alert">
-
+  .container-content {
+    position: absolute;
+    top: -15;
+    right: 0;
+    z-index: 1000;
+    width: 300px;
+  }
+</style>
+<!-- error message -->
+<% if (success_msg) { %>
+  <% success_msg.forEach(function(msg) { %>
+    <div class=" container-content alert text-white bg-success font-size-14" role="alert">
       <div class="iq-alert-text">
-        <%= err.msg %>
+        <%= msg %>
       </div>
       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
         <i class="ri-close-line"></i>
       </button>
     </div>
-
     <% }) %>
       <% } %>
 
-        <!-- success message -->
-        <% if (success_msg !='' ) { %>
-          <div class="alert text-white bg-success" role="alert">
-
-            <div class="iq-alert-text">
-              <%= success_msg %>
-            </div>
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-              <i class="ri-close-line"></i>
-            </button>
-          </div>
-          <% } %>
-
-            <!-- error_msg -->
-            <% if (error_msg !='' ) { %>
-              <div class="alert text-white bg-warning" role="alert">
-
-                <div class="iq-alert-text">
-                  <%= error_msg %>
-                </div>
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                  <i class="ri-close-line"></i>
-                </button>
+        <!-- error message -->
+        <% if (error_msg) { %>
+          <% error_msg.forEach(function(msg) { %>
+            <div class="container-content alert text-white bg-warning font-size-14" role="alert">
+              <div class="iq-alert-text">
+                <%= msg %>
               </div>
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <i class="ri-close-line"></i>
+              </button>
+            </div>
+            <% }) %>
               <% } %>

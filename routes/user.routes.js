@@ -10,40 +10,7 @@ const router = express.Router();
 
 const User = require('../models/user.schema');
 const product = require('../models/product.schema');
-const Role = require('../models/role.schema');
 
-// initialize router to express
-
-const { ensureAuthenticated } = require('../passport/authenticated');
-
-require('../passport/localstrategy')(passport);
-
-// Login page
-// Description: Get request
-router.get('/login', async (req, res) => {
-  res.render('login');
-});
-
-// login page
-// description: post request
-router.post(
-  '/login',
-  // request and responds function
-  async (req, res, next) => {
-    passport.authenticate('local', {
-      successRedirect: '/users/index',
-      failureRedirect: '/users/login',
-      failureFlash: true,
-    })(req, res, next);
-  }
-);
-
-// homepage
-router.get('/index', ensureAuthenticated, async (req, res) => {
-  res.render('index', {
-    name: req.user.firstName,
-  });
-});
 
 // get product api
 // description: get Request

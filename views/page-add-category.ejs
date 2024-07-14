@@ -1,7 +1,7 @@
 <%- include('patials/head') %>
 
-  <%- include('patials/side_navbar') %>
-    <%- include('patials/top_navbar') %>
+  <%- include('patials/top_navbar') %>
+    <%- include('patials/side_navbar') %>
 
       <body class="  ">
         <!-- loader Start -->
@@ -20,9 +20,9 @@
                     <div class="card">
                       <div class="card-header d-flex justify-content-between">
                         <div class="header-title">
-                          <h4 class="card-title">Add Category/h4>
+                          <h4 class="card-title">Add Category</h4>
                         </div>
-                        <a href="/users/page-list-category"> <button type="submit" class="btn btn-primary mr-2">list
+                        <a href="/users/page-list-category"> <button type="submit" class="btn btn-primary mr-2">List
                             Category</button></a>
                       </div>
                       <div class="card-body">
@@ -37,35 +37,18 @@
                                 <input type="file" class="form-control image-file" name="image" accept="image/*">
                               </div>
                             </div>
+
+                            <!-- category -->
                             <div class="col-md-12">
                               <div class="form-group">
-                                <label>Product Name *</label>
-                                <input type="text" class="form-control" name="productName"
-                                  placeholder="Enter ProductName">
+                                <label>Name *</label>
+                                <input type="text" class="form-control" name="name" placeholder="Enter Category">
                                 <div class="help-block with-errors"></div>
                               </div>
                             </div>
-                            <div class="col-md-12">
-                              <div class="form-group">
-                                <label>Category *</label>
-                                <select name="category" class="selectpicker form-control" data-style="py-0">
-                                  <option>Beauty</option>
-                                  <option>Grocery</option>
-                                  <option>Food</option>
-                                  <option>Furniture</option>
-                                  <option>Shoes</option>
-                                  <option>Phone</option>
-                                  <option>Electronics</option>
-                                </select>
-                              </div>
-                            </div>
-                            <div class="col-md-12">
-                              <div class="form-group">
-                                <label>Code *</label>
-                                <input type="text" class="form-control" placeholder="Enter Code" name="code" required>
-                                <div class="help-block with-errors"></div>
-                              </div>
-                            </div>
+
+
+
                           </div>
                           <button type="submit" class="btn btn-primary mr-2">Add category</button>
                           <button type="reset" class="btn btn-danger">Reset</button>
