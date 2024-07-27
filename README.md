@@ -1,19 +1,18 @@
-# Inventory Management System
+# Inventory Management System Using Nodejs, Express, Mongodb and Bootstrap
 
-Welcome to the Inventory Management System! This application is designed to streamline the management of inventory across various roles within your organization. Built with modern web technologies, our system ensures efficient, user-friendly, and secure management of inventory data.
+Welcome to the Inventory Management System! This application is designed to streamline the management of inventory across various roles within your organization. Built with modern web technologies, the system ensures efficient, user-friendly, and secure management of inventory data.
 
 ## Features
 
 - **Admin Module**: Manage system settings, user roles, and high-level inventory controls.
 - **Store Manager Module**: Oversee inventory operations, track stock levels, and manage suppliers.
 - **Cashier Module**: Handle sales transactions, process customer purchases, and generate sales reports.
-- **HR Manager Module**: Manage employee records, track attendance, and handle payroll.
 
 ## Technologies Used
 
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB with Mongoose for ORM
-- **Frontend**: Bootstrap for styling, HTML5, and JavaScript
+- **Frontend**: Html, Css, Sass, Bootstrap for styling, and JavaScript
 - **Other library**: Bycrypt.js, Passport.js, Ejs
 
 ## Installation
@@ -58,9 +57,9 @@ Welcome to the Inventory Management System! This application is designed to stre
 4. **HR Manager Module**:
     - Navigate to `/hr-manager` to manage employee records and payroll.
 
-## QR Code Scanning
+## Barcode Code Scanning
 
-The application integrates QR code scanning capabilities for efficient inventory tracking and management:
+The application integrates Barcode code scanning capabilities for efficient inventory tracking and management:
 
 
 
@@ -69,7 +68,7 @@ Sure! Here is the README for your Inventory Management System with all the Markd
 ```markdown
 # Inventory Management System
 
-Welcome to the Inventory Management System! This application is designed to streamline the management of inventory across various roles within your organization. Built with modern web technologies, our system ensures efficient, user-friendly, and secure management of inventory data.
+Welcome to the Inventory Management System! This application is designed to streamline the management of inventory across various roles within your organization. Built with modern web technologies, the system ensures efficient, user-friendly, and secure management of inventory data.
 
 ## Features
 
