@@ -171,13 +171,13 @@ Feel free to reach out if you have any questions or need further assistance. Tha
 
 ## Contact
 
-For any inquiries or support, please contact us at:
-- Email: support@inventorysystem.com
-- GitHub: [YourUsername](https://github.com/yourusername)
+For any inquiries or support, please contact me at:
+- Email: Ahlbany9@gmail.com
+- GitHub: dotpyScript (https://github.com/dotpyScript)
 
 ---
 
-**Developed with ❤️ by [Your Name]**
+**Developed with ❤️ by Abbas Mahmud (dotpyScript) **
 
 ---
 
