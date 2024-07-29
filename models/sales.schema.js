@@ -1,13 +1,33 @@
 const mongoose = require('mongoose');
 
-const salesSchema = mongoose.Schema;
+const schema = mongoose.Schema;
 
-const schema = new salesSchema({
+const salesSchema = new schema({
+  date: {
+    type: Date,
+    default: Date.now,
+  },
+  reference: {
+    type: String,
+    require: true,
+  },
+  biller: {
+    type: String,
+  },
   customer: {
     type: String,
     required: true,
   },
-  reference: {
+  orderDiscount: {
+    type: String,
+    require: true,
+  },
+
+  total: {
+    type: String,
+    require: true,
+  },
+  paid: {
     type: String,
     require: true,
   },
@@ -15,24 +35,19 @@ const schema = new salesSchema({
     type: String,
     require: true,
   },
-  discount: {
-    type: String,
-    require: true,
-  },
-  total: {
-    type: Number,
-    required: true,
-  },
-  paid: {
-    type: Number,
-    required: true,
-  },
-  biller: {
+  imagePath: {
     type: String,
     required: true,
   },
-  date: {
-    type: Date,
-    default: Date.now,
+  salesStatus: {
+    type: String,
+    required: true,
+  },
+
+  paymentStatus: {
+    type: String,
+    required: true,
   },
 });
+
+module.exports = mongoose.model('Sales', salesSchema);

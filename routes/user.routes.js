@@ -11,7 +11,6 @@ const router = express.Router();
 const User = require('../models/user.schema');
 const product = require('../models/product.schema');
 
-
 // get product api
 // description: get Request
 router.get('/product', async (req, res) => {
@@ -24,31 +23,8 @@ router.get('/product', async (req, res) => {
 });
 
 ///////////////////////// Sale /////////////////////////
-// add sale
-// description: get Request
-router.get('/page-add-sale', (req, res) => {
-  res.render('page-add-sale');
-});
-
-// add sale
-// description: get Request
-router.get('/page-list-sale', (req, res) => {
-  res.render('page-list-sale');
-});
 
 ///////////////////// purchase /////////////////////////////////
-
-// add purchase
-// description: get Request
-router.get('/page-add-purchase', (req, res) => {
-  res.render('page-add-purchase');
-});
-
-// list purchase
-// description: get Request
-router.get('/page-list-purchase', (req, res) => {
-  res.render('page-list-purchase');
-});
 
 ///////////////////// email ///////////////////////////
 

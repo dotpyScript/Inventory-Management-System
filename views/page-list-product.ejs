@@ -43,8 +43,8 @@
                           <th>Category</th>
                           <th>Price</th>
                           <th>Brand Name</th>
-                          <th>Cost</th>
                           <th>Quantity</th>
+                          <th>Barcode</th>
                           <th>Action</th>
                         </tr>
                       </thead>
@@ -63,7 +63,7 @@
                                 <img src="<%= product.imagePath %>" class="img-fluid rounded avatar-50 mr-3"
                                   alt="image">
                                 <div>
-                                  <%= product.name %>
+                                  <%= product.productName %>
                                     <p class="mb-0"><small>
                                         <%= product.description %>
                                       </small></p>
@@ -76,18 +76,19 @@
                             <td>
                               <%= product.category %>
                             </td>
-                            <td>$
+                            <td>₦
                               <%= product.price %>
                             </td>
                             <td>
-                              <%= product.name %>
-                            </td>
-                            <td>$ <%= product.cost %>
-                            </td>
+                              <%= product.brand %>
                             <td>
                               <%= product.quantity %>
                             </td>
+                            <td><img src="<%= product.barcodePath %>" alt="Barcode"
+                                class="img-fluid rounded avatar-50 mr-3"></td>
                             <td>
+
+                              <!-- action -->
                               <div class="d-flex align-items-center list-action">
                                 <a class="badge badge-info mr-2" data-toggle="tooltip" data-placement="top" title=""
                                   data-original-title="View" href="/users/view-product/<%= product._id %>"><i

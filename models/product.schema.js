@@ -6,14 +6,17 @@ const optionsSchema = {
 };
 
 const productSchema = new mongoose.Schema({
-  name: optionsSchema,
+  productName: optionsSchema,
+  brand: optionsSchema,
   description: optionsSchema,
   category: optionsSchema,
   code: optionsSchema,
   quantity: optionsSchema,
   price: optionsSchema,
-  cost: optionsSchema,
   imagePath: optionsSchema,
+  barcodePath: {
+    type: String,
+  },
   date: {
     type: Date,
     default: Date.now,
