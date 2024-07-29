@@ -40,7 +40,7 @@ Welcome to the Inventory Management System! This application is designed to stre
 
 5. **Start the application**:
     ```sh
-    npm start
+   
     ```
 
 ## Usage
